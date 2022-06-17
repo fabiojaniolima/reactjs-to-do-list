@@ -34,6 +34,22 @@ body, input, textarea, button {
   font-size: 1rem;
 }
 
+#wrapper {
+  width: 46rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  #wrapper {
+    width: 100%;
+  }
+}
+
 #header {
   display: flex;
   height: 200px;
