@@ -52,7 +52,6 @@ form > button:hover {
   padding-bottom: 20px;
   font-size: 0.875rem;
   font-weight: 700;
-  border-bottom: 1px solid var(--gray-400);
 }
 
 .taskList header > p:first-child {
@@ -72,6 +71,10 @@ form > button:hover {
   background: var(--gray-400);
 }
 
+.border {
+  border-bottom: 1px solid var(--gray-400);
+}
+
 .taskList main {
   text-align: center;
 }
@@ -79,4 +82,10 @@ form > button:hover {
 .taskList main > svg {
   margin-top: 5rem;
   color: var(--gray-400);
+}
+
+.taskList main > .items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
