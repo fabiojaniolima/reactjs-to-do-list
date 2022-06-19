@@ -72,14 +72,16 @@ function TaskList() {
             </>
           ) : (
             <div className={styles.items}>
-              {items.map((item) => (
-                <TaskListItem
-                  key={item.id}
-                  {...item}
-                  deleteItem={handleDeleteTask}
-                  changeItemStatus={handleChangeTaskStatus}
-                />
-              ))}
+              {items
+                .sort((a, b) => Number(a.isDone) - Number(b.isDone))
+                .map((item) => (
+                  <TaskListItem
+                    key={item.id}
+                    {...item}
+                    deleteItem={handleDeleteTask}
+                    changeItemStatus={handleChangeTaskStatus}
+                  />
+                ))}
             </div>
           )}
         </main>
