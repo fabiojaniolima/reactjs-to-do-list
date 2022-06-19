@@ -1,5 +1,5 @@
 import { ClipboardText, PlusCircle } from 'phosphor-react'
-import { FormEvent, useMemo, useState } from 'react'
+import { FormEvent, useEffect, useMemo, useState } from 'react'
 import { v4 as uuid } from 'uuid'
 
 import styles from './TaskList.module.css'
@@ -18,7 +18,7 @@ function TaskList() {
 
   function handleNewItem(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setItems([...items, { id: uuid(), content: newItem, isDone: false }])
+    setItems([{ id: uuid(), content: newItem, isDone: false }, ...items])
     setNewItem('')
   }
 
