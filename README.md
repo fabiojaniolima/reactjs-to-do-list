@@ -7,6 +7,8 @@ representa a resolução do desafio 01 - "**Praticando Conceitos**" da trilha Re
 > As palavras-chave "DEVE", "NÃO DEVE", "REQUER", "DEVERIA", "NÃO DEVERIA", "PODERIA", "NÃO PODERIA", "RECOMENDÁVEL",
 > "PODE", e "OPCIONAL" neste documento devem ser interpretadas como descritas no [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
+![captura de tela da versão mobile e web](screenshot.jpg "captura de tela da versão mobile e web")
+
 ## :building_construction: Para executar essa app
 
 Você PODE realizar o download do zip ou preferencialmente fazer o clone do projeto:
