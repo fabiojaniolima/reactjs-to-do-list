@@ -1,6 +1,7 @@
 .item {
   display: grid;
   grid-template-columns: 38px 1fr 32px;
+  color: var(--gray-100);
   padding: 16px;
   text-align: left;
   background: var(--gray-500);
