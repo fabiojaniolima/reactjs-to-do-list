@@ -9,6 +9,8 @@ representa a resolução do desafio 01 - "**Praticando Conceitos**" da trilha Re
 
 ![captura de tela da versão mobile e web](screenshot.jpg "captura de tela da versão mobile e web")
 
+**Demo**: https://fj-reactjs-to-do-list.netlify.app
+
 ## :building_construction: Para executar essa app
 
 Você PODE realizar o download do zip ou preferencialmente fazer o clone do projeto:
