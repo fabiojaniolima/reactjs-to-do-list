@@ -7,7 +7,18 @@ import TaskListItem, { Task } from './TaskListItem'
 
 function TaskList() {
   const [newItem, setNewItem] = useState('')
-  const [items, setItems] = useState<Task[]>([])
+  const [items, setItems] = useState<Task[]>(
+    JSON.parse(localStorage.getItem('items') || '[]')
+  )
+
+  useEffect(() => {
+    if (!items.length) {
+      localStorage.removeItem('items')
+      return
+    }
+
+    localStorage.setItem('items', JSON.stringify(items))
+  }, [items])
 
   const { totalItems, totalItemsCompleted } = useMemo(() => {
     return {
