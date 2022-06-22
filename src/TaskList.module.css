@@ -7,7 +7,6 @@ form {
 
 form input {
   flex-grow: 1;
-  height: 3.375rem;
   color: var(--gray-300);
   padding: 1rem;
   border-radius: 8px;

@@ -20,28 +20,28 @@
 }
 
 .round label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
   background-color: transparent;
   border: 1px solid var(--blue);
   border-radius: 50%;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
-  left: 0;
-  position: absolute;
-  top: 0;
 }
 
 .round label:after {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 8px;
+  height: 4px;
   border: 2px solid #fff;
   border-top: none;
   border-right: none;
   content: "";
-  width: 9px;
-  height: 4px;
-  top: 7px;
-  left: 5px;
   opacity: 0;
-  position: absolute;
   transform: rotate(-45deg);
 }
 
