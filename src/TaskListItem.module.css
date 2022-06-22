@@ -59,6 +59,8 @@
 }
 
 .item button {
+  display: flex;
+  margin-left: auto;
   border: 0;
   color: var(--gray-300);
   background: transparent;
@@ -69,8 +71,4 @@
 
 .item button:hover {
   color: var(--danger);
-}
-
-.item svg {
-  margin-left: auto;
 }
